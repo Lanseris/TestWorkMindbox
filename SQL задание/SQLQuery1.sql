@@ -28,8 +28,8 @@ Products.Name,
 Categories.Name
 from Products
 --задание
-inner join ProductsVsCategories on Products.ID = ProductsVsCategories.ProductID
-inner join Categories on Categories.ID = ProductsVsCategories.CategoriesID
+left join ProductsVsCategories on Products.ID = ProductsVsCategories.ProductID
+left join Categories on Categories.ID = ProductsVsCategories.CategoriesID
 
 --для проверки
 --full outer join ProductsVsCategories on Products.ID = ProductsVsCategories.ProductID  
